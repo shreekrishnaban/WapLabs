@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+}
+
+.maincolor {
+    color: #1f4ce2;
+}
+
+.form {
+    display: inline-block;
+}
+
+label {
+    width: 300px;
+    display: inline;
+    margin-bottom: 5px;
+}
+
+span {
+    float: left;
+}
+
+select,
+input {
+    width: 300px;
+    height: 30px;
+}
+
+input[type="radio"] {
+    width: 60px !important;
+    height: 15px;
+    float: left;
+    border-color: darkred;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 15px;
+    float: left;
+}
+
+.form-control {
+    font-weight: bold;
+    text-align: right;
+    padding-block: 5px;
+}
+
+.form-control input[type="text"] {
+    margin-left: 15px;
+}
+
+input[type="submit"] {
+    width: 100%;
+}

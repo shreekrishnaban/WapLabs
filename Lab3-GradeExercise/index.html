@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grade</title>
+    <link rel="stylesheet" href="grade.css">
+</head>
+
+<body>
+    <form action="http://mumstudents.org/params.php" method="post">
+        <div class="form maincolor">
+            <h1>Grade details</h1>
+            <div class="form-control maincolor">
+                <label>Name:</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-control maincolor">
+                <label>Student ID:</label>
+                <input type="text" name="studentId">
+            </div>
+
+            <div class="form-control maincolor">
+                <label>Assignment:</label>
+                <select name="assignment">
+                <option>Lab1</option>
+                <option>Lab2</option>
+                <option>Lab3</option>
+            </select>
+            </div>
+
+            <fieldset>
+                <legend>Entry</legend>
+                <div class="form-control maincolor" style="display: inline-flex">
+                    <input type="radio" name="entry" value="November 2021"><span>November 2021</span>
+                    <input type="radio" name="entry" value="August 2021"><span>November 2021</span>
+                </div>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirm grade</legend>
+                <div class="form-control maincolor">
+                    <input type="checkbox" name="isOwnGrade" value="Own Grade"><span>Own Grade</span>
+                </div>
+
+
+            </fieldset>
+
+
+
+
+
+            <div class="form-control">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
