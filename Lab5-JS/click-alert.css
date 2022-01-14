@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+}
+
+.btn {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
