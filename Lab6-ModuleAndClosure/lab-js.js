@@ -34,25 +34,22 @@ function rudyClicked() {
 var accountInfoList = [];
 
 var accountModule = (function() {
-
-    var bankAccount = {};
-
-    function createAccount(accountName, deposit) {
-        var newAccount = Object.create(bankAccount);
-        newAccount.accountName = accountName;
-        newAccount.deposit = parseFloat(deposit);
-        accountInfoList.push(newAccount);
+    class BankAccount {
+        constructor(accountName, deposit) {
+            this.accountName = accountName;
+            this.deposit = deposit;
+        }
     }
 
-
+    function createAccount(accountName, deposit) {
+        var newAccount = new BankAccount(accountName, parseFloat(deposit));
+        accountInfoList.push(newAccount);
+    }
     return {
         createNewAccount: function(accountName, deposit) {
             createAccount(accountName, deposit);
         }
     }
-
-
-
 })();
 
 function btnCreateAccountClicked() {
@@ -61,7 +58,7 @@ function btnCreateAccountClicked() {
 }
 
 function refreshList() {
-    let newBankAccount = accountInfoList[accountInfoList.length - 1];
+    let newBankAccountOutput = accountInfoList[accountInfoList.length - 1];
     document.getElementById("bankAccountOutput").value +=
-        "\n" + "Account Name : " + newBankAccount.accountName + " Balance : " + newBankAccount.deposit;
+        "\n" + "Account Name : " + newBankAccountOutput.accountName + " Balance : " + newBankAccountOutput.deposit;
 }
