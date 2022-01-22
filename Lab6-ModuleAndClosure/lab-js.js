@@ -34,7 +34,9 @@ function rudyClicked() {
 var accountInfoList = [];
 
 var accountModule = (function() {
+
     class BankAccount {
+
         constructor(accountName, deposit) {
             this.accountName = accountName;
             this.deposit = deposit;
@@ -45,11 +47,16 @@ var accountModule = (function() {
         var newAccount = new BankAccount(accountName, parseFloat(deposit));
         accountInfoList.push(newAccount);
     }
+
+
     return {
         createNewAccount: function(accountName, deposit) {
             createAccount(accountName, deposit);
         }
     }
+
+
+
 })();
 
 function btnCreateAccountClicked() {
