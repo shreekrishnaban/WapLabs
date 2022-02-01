@@ -1,0 +1,24 @@
+body {
+    font-family: verdana;
+    font-size: 20px;
+    background-color: rgb(212, 237, 245);
+}
+
+.lookup-div {
+    background-color: rgb(216, 211, 211);
+    padding: 5px;
+}
+
+.lookup-div * {
+    display: inline;
+}
+
+.no-results {
+    color: rgb(238, 60, 60);
+    font-weight: bold;
+}
+
+.top-header {
+    background-color: darkgrey;
+    padding: 10px;
+}
